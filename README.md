@@ -55,4 +55,4 @@ _Screenshot placeholder:_ ![Step 6 – Alert](images/step6_alert_placeholder.png
 
 ### 7) (Optional) Extend coverage
 Add more finding types, multiple rules to the same Lambda, or additional SNS subscriptions (email, SMS, HTTP).  
-_Screenshot placeholder:_ ![Step 7 – Extensions](images/step7_extensions_placeholder.png)
+![image alt](https://github.com/Dannyz513/Guard-Duty-Threat-Detection/blob/bf264c4bd717da146fd37d4d977d0b3301f3ca58/Guard%20duty%20final.png)
