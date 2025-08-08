@@ -8,7 +8,7 @@
 
 ### 2) Enable GuardDuty
 Turn on GuardDuty in your home region. Wait a few minutes while it initializes.  
-
+![image alt](https://github.com/Dannyz513/Guard-Duty-Threat-Detection/blob/7c392b1b0f7ca19f19ed213cd83d451d6481ce96/Guard%20duty%201.png)
 
 ### 3) Create an SNS Topic + Subscription
 Create `GuardDuty-Threat-Alerts`. Subscribe your email and confirm the subscription.  
