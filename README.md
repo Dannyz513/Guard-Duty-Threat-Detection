@@ -18,11 +18,6 @@
 - AWS CLI configured (`aws configure`)
 - An email address for SNS subscription
 
-## Step-by-step (6–7 steps)
-### 1) Enable CloudTrail
-Enable a management events trail (console or CLI) so GuardDuty has activity context.  
-_Screenshot placeholder:_ ![Step 1 – CloudTrail](images/step1_cloudtrail_placeholder.png)
-
 ### 2) Enable GuardDuty
 Turn on GuardDuty in your home region. Wait a few minutes while it initializes.  
 _Screenshot placeholder:_ ![Step 2 – GuardDuty](images/step2_guardduty_placeholder.png)
