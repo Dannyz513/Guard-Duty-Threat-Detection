@@ -1,22 +1,10 @@
 # GuardDuty Threat Detection (AI-Powered Alerts)
 
-> **Repo name**: `guard duty threat detection`  
-> This project builds a real-time threat detection and alerting pipeline on AWS using **Amazon GuardDuty**, **EventBridge**, **AWS Lambda**, and **Amazon SNS**. It mirrors common “AI-driven threat intel” pipelines by leveraging GuardDuty’s ML-based detections and automating notifications.
-
-## What this repo shows recruiters
-- Wire up a production-style **security alert pipeline** on AWS
-- Understand **GuardDuty findings**, **EventBridge rules**, **Lambda handlers**, and **SNS alerts**
-- Test end-to-end using **sample GuardDuty findings**
 
 ## Architecture
 ![Architecture Diagram – placeholder](images/01_architecture_placeholder.png)
 
 **Flow:** GuardDuty Finding → EventBridge Rule → Lambda (formats alert) → SNS (email/SMS)
-
-## Prerequisites
-- AWS account with admin privileges for setup
-- AWS CLI configured (`aws configure`)
-- An email address for SNS subscription
 
 ### 2) Enable GuardDuty
 Turn on GuardDuty in your home region. Wait a few minutes while it initializes.  
