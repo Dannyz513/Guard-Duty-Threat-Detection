@@ -68,36 +68,3 @@ _Screenshot placeholder:_ ![Step 6 – Alert](images/step6_alert_placeholder.png
 ### 7) (Optional) Extend coverage
 Add more finding types, multiple rules to the same Lambda, or additional SNS subscriptions (email, SMS, HTTP).  
 _Screenshot placeholder:_ ![Step 7 – Extensions](images/step7_extensions_placeholder.png)
-
-## Files
-```
-guard duty threat detection/
-├─ src/
-│  └─ GuardDuty-Automated-Response.py
-├─ images/
-│  ├─ 01_architecture_placeholder.png
-│  ├─ step1_cloudtrail_placeholder.png
-│  ├─ step2_guardduty_placeholder.png
-│  ├─ step3_sns_placeholder.png
-│  ├─ step4_lambda_placeholder.png
-│  ├─ step5_eventbridge_placeholder.png
-│  ├─ step6_alert_placeholder.png
-│  └─ step7_extensions_placeholder.png
-├─ artifacts/
-├─ README.md
-└─ .gitignore
-```
-
-## Quick deploy (manual, console-first)
-1. Create SNS topic + subscribe your email  
-2. Create Lambda and paste code from `src/GuardDuty-Automated-Response.py`  
-3. Add `SNS_TOPIC_ARN` env var; grant `sns:Publish` to topic  
-4. Create EventBridge rule using the JSON above and set Lambda as target  
-5. Generate sample findings and confirm email
-
-## Notes
-- GuardDuty already uses ML; this repo demonstrates detection-to-action wiring.
-- For production: least-privilege IAM, DLQ, retries, SSM/Secrets for config.
-
-## License
-MIT
