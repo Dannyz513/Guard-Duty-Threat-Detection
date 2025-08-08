@@ -43,7 +43,7 @@ Target the Lambda on GuardDuty findings (example filters `Trojan:EC2/BlackholeTr
   }
 }
 ```
-_Screenshot placeholder:_ ![Step 5 – EventBridge](images/step5_eventbridge_placeholder.png)
+![image alt](https://github.com/Dannyz513/Guard-Duty-Threat-Detection/blob/342c25fd4f7edec34543f2f9477a42e485e27be3/Eventbridge.png)
 
 ### 6) Test with sample findings
 Replace `YOUR_DETECTOR_ID` and run:
