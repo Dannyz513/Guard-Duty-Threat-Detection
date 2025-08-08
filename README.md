@@ -2,7 +2,7 @@
 
 
 ## Architecture
-!(image-url): https://github.com/Dannyz513/Guard-Duty-Threat-Detection/blob/3399ae7308eb236d021d3c80a1343bf60262247c/GUARDDUTY%20ARCHITECTURE.png
+![image alt](https://github.com/Dannyz513/Guard-Duty-Threat-Detection/blob/3399ae7308eb236d021d3c80a1343bf60262247c/GUARDDUTY%20ARCHITECTURE.png)
 
 **Flow:** GuardDuty Finding → EventBridge Rule → Lambda (formats alert) → SNS (email/SMS)
 
