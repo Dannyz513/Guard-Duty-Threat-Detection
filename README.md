@@ -12,7 +12,7 @@ Turn on GuardDuty in your home region. Wait a few minutes while it initializes.
 
 ### 3) Create an SNS Topic + Subscription
 Create `GuardDuty-Threat-Alerts`. Subscribe your email and confirm the subscription.  
-_Screenshot placeholder:_ ![Step 3 – SNS](images/step3_sns_placeholder.png)
+![image alt](https://github.com/Dannyz513/Guard-Duty-Threat-Detection/blob/c32058a9fb8c54fd0e87db721c6d40b25cf0e12c/sns%20arn.png)
 
 ### 4) Create the Lambda function
 Create `GuardDuty-Automated-Response` (Python 3.x). Attach **AWSLambdaBasicExecutionRole**, add **sns:Publish** permission to your topic, and set env var `SNS_TOPIC_ARN=<your topic ARN>`.  
@@ -44,14 +44,6 @@ Target the Lambda on GuardDuty findings (example filters `Trojan:EC2/BlackholeTr
 }
 ```
 ![image alt](https://github.com/Dannyz513/Guard-Duty-Threat-Detection/blob/342c25fd4f7edec34543f2f9477a42e485e27be3/Eventbridge.png)
-
-### 6) Test with sample findings
-Replace `YOUR_DETECTOR_ID` and run:
-```bash
-aws guardduty create-sample-findings   --detector-id YOUR_DETECTOR_ID   --finding-types "Trojan:EC2/BlackholeTraffic"
-```
-You should receive an SNS email alert.  
-_Screenshot placeholder:_ ![Step 6 – Alert](images/step6_alert_placeholder.png)
 
 ### 7) (Optional) Extend coverage
 Add more finding types, multiple rules to the same Lambda, or additional SNS subscriptions (email, SMS, HTTP).  
