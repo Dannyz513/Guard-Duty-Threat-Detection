@@ -8,7 +8,7 @@
 
 ### 2) Enable GuardDuty
 Turn on GuardDuty in your home region. Wait a few minutes while it initializes.  
-_Screenshot placeholder:_ ![Step 2 – GuardDuty](images/step2_guardduty_placeholder.png)
+![image alt](https://github.com/Dannyz513/Guard-Duty-Threat-Detection/blob/bbf55978fefd7acce7f48a2c741ab0bf94b51f37/Guard%20duty.png)
 
 ### 3) Create an SNS Topic + Subscription
 Create `GuardDuty-Threat-Alerts`. Subscribe your email and confirm the subscription.  
@@ -16,7 +16,7 @@ _Screenshot placeholder:_ ![Step 3 – SNS](images/step3_sns_placeholder.png)
 
 ### 4) Create the Lambda function
 Create `GuardDuty-Automated-Response` (Python 3.x). Attach **AWSLambdaBasicExecutionRole**, add **sns:Publish** permission to your topic, and set env var `SNS_TOPIC_ARN=<your topic ARN>`.  
-_Screenshot placeholder:_ ![Step 4 – Lambda](images/step4_lambda_placeholder.png)
+![image alt](https://github.com/Dannyz513/Guard-Duty-Threat-Detection/blob/bbf55978fefd7acce7f48a2c741ab0bf94b51f37/Guard%20duty.png)
 
 **Inline policy JSON (update ARN):**
 ```json
